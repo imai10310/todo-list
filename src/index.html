@@ -4,33 +4,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>profile</title>
+  <title>todo-list</title>
   <link rel="stylesheet" href="../styles/reset.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <link rel="stylesheet" href="../styles/style.css" />
-
 </head>
 
 <body>
   <div class="main">
+    <!--ヘッダー部分-->
     <div class="head">
+      <!--ゴミ箱アイコン-->
       <div class="trash">
-        <img src="../images/trash-pic.jpeg" alt="trash">
+        <i class="fa fa-trash"></i>
       </div>
+      <!--真ん中の題名-->
       <div class="top-str">
         <h1>リスト</h1>
       </div>
+      <!--編集ボタン-->
       <div class="remake">
         <p>編集</p>
       </div>
     </div>
-    <div class="main-list">
-      <ul>
-        <li><input type="checkbox" name="os" value="win7">1つめ</li>
-        <li><input type="checkbox" name="os" value="win7">2つめ</li>
-        <li><input type="checkbox" name="os" value="win7">3つめ</li>
-
-      </ul>
+    <div class="main-list" id="mainList">
+      <!--入力欄とチェックボックス-->
+      <div class="hoge" id="hoge">
+        <input type="checkbox" title="check">
+        <input class="input-field" id="inputField" type="text" title="check">
+      </div>
     </div>
   </div>
-  <script src="js/index.js"></script>
+  <script src="../index.js"></script>
 </body>
